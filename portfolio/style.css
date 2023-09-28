@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(lightgray,rgb(221, 219, 219),rgb(221, 221, 221));
+}
+/* header part */
+navbar{
+    top: 0;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color:white;
+    box-shadow: 4px 2px 8px rgb(97, 96, 96);
+    font-family: sans-serif;
+    z-index: 999;
+}
+
+.profile{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.profile img{
+    height: 60px;
+    width: 60px;
+    margin-right: 18px;
+    padding: 6px;
+    border: solid 3px purple;
+    border-radius: 50%;
+    box-shadow: 2px 2px 7px gray;
+}
+.profile p{
+    font-size: 28px;
+    font-weight: 500;
+    color:rgb(158, 20, 158);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.5px;
+    text-shadow: 0.5px 1px 2px gray;
+
+}
+.nav-link ul li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 50px;
+    cursor: pointer;
+    color:black ;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-link ul .active, .nav-link ul li:hover{
+    color:  purple;
+    font-weight: 700;
+}
+
+/* container  */
+
+.container{
+    padding-top: 150px;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    padding:0 90px;
+}    
+.left{
+   max-width:50%;
+}
+.left .intro{
+    margin-top: 60px;
+    font-size: 34px;
+    font-weight: 600;
+    color:black;
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+.left .intro .name {
+    font-size: 42px;
+    font-weight: 700;
+    color:purple;
+    font-family: sans-serif;
+}
+.about{
+    max-width: 84%;
+    font-size:18px;
+    font-weight: 600;
+    margin: 50px 0;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+.btn{
+    margin:20px 60px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border:none;
+    border-radius: 20px;
+    background-color:#fff;
+    color:rgb(139, 5, 139);
+    box-shadow: 7px 14px 22px rgba(45, 45, 45, 0.575);
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:#e0dcdc; 
+    color: purple;  
+    font-weight: 600; 
+}
+
+.right{
+    max-width: 50%; 
+    margin-left: 60px;
+}
+.right img{
+    height: 500px;
+    width: 500px;
+    padding: 60px;
+    filter:drop-shadow(3px 2px 2px rgb(253, 253, 253));
+    
+}
+hr{
+    margin: 46px 90px;
+    color: white;
+}
+
+/* section2 */
+
+.section2{
+    width: 100%;
+    padding: 34px 52px;
+}
+.section2 .card-container-head{
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    margin: 8px 38px;
+    font-family: sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+.card{
+    
+   min-width: 16%;
+   height: 260px;
+   margin: 2%;
+   padding: 20px 20px;
+   background-color:white;
+   box-shadow: -1px -1px 12px #0b0b0b;
+   border-radius: 18px;
+   cursor: pointer;
+  
+}
+.card:hover{
+    
+    background-color: #f1ebeb;
+}
+.card div img{
+    height: 64px;
+    width: 64px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; 
+}
+.card div p{
+    text-align: center;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 5px 12px rgb(255, 255, 254);
+    background-color: #757272;
+}
+.footer-distribution{
+    
+    height: 220px;
+    padding:14px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-left{
+    min-width: 33.33%;
+    padding: 18px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-links{
+    justify-content: center;
+    padding:2px 34px;
+}
+.footer-links a{
+    text-decoration: none;
+    display: flex;
+    margin: 12px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.footer-logo{
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow:0px 1px 2px whitesmoke ;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+}
+.footer-logo .brown{
+    color: brown;
+}
+.footer-logo .purple{
+    color: purple;
+    margin-right: 4px;
+}
+
+.footer-between{
+    min-width: 33.33%; 
+    align-items: center;
+    padding: 14px;
+   
+}
+.footer-between div{
+    margin: 25px 5px;
+    display: flex; 
+    align-items: center;
+    color: white;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+.footer-between div p{
+    margin-left: 20px;
+    font-size: 16px;
+
+}
+.footer-between div p a{
+    text-decoration: none;
+    color: white;
+}
+   
+.footer-right{
+    min-width: 33.33%;
+    padding:16px;
+}
+.footer-right p{
+    margin: 16px 5px;
+    line-height: 1.5em;
+    color: white;
+    font-family: sans-serif;
+}
+.footer-right p span{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    display: block;
+    margin-bottom: 22px;
+}
+
+.footer-right div a{
+    height: 35px;
+    width: 35px;
+    display:inline-block;
+    background-color: #a4a0a0;
+    border-radius: 4px;
+    margin: 14px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.footer-right div a:hover{
+    background-color:  #8e8c8c;
+}
+
+.copyright{
+    text-align: center;
+    background-color:black;
+    color: #fff;
+    font-weight: 500;
+}
+
